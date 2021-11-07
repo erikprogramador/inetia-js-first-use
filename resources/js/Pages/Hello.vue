@@ -29,17 +29,17 @@ export default {
 </script>
 
 <template>
-    <div class="max-w-3xl mx-auto">
+    <div class="max-w-3xl mx-auto pb-12">
         <h1 class="text-4xl font-bold text-center mt-6 mb-10">Your messages</h1>
 
-        <form @submit.prevent="addMessage" class="mb-8 relative">
+        <form @submit.prevent="addMessage" class="mb-8 relative sticky top-0">
             <textarea
                 name="message"
                 id="message"
                 cols="30"
                 rows="10"
                 placeholder="Your message here"
-                class="bg-gray-50 w-full rounded p-4 h-32 resize-none"
+                class="bg-gray-50 w-full rounded p-4 h-32 resize-none shadow-sm"
                 v-model="form.message"
             ></textarea>
             <span

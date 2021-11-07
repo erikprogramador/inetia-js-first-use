@@ -20136,7 +20136,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "max-w-3xl mx-auto"
+  "class": "max-w-3xl mx-auto pb-12"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
@@ -20158,14 +20158,14 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onSubmit: _cache[1] || (_cache[1] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $options.addMessage && $options.addMessage.apply($options, arguments);
     }, ["prevent"])),
-    "class": "mb-8 relative"
+    "class": "mb-8 relative sticky top-0"
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     name: "message",
     id: "message",
     cols: "30",
     rows: "10",
     placeholder: "Your message here",
-    "class": "bg-gray-50 w-full rounded p-4 h-32 resize-none",
+    "class": "bg-gray-50 w-full rounded p-4 h-32 resize-none shadow-sm",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $data.form.message = $event;
     })
